@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'login',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  public MostrarFormularioLogin: boolean = false;
+
+  public MostrarFormularioLoginClick(): void {
+    this.MostrarFormularioLogin = true;
+  }
 
 
 }

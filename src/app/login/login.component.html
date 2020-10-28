@@ -12,7 +12,7 @@
   <div class="col text-center item-menu">
     TORNEIO EMPREENDEDOR
   </div>
-  <div class="col text-center item-menu" style="color: white;">
+  <div class="col text-center item-menu" style="color: white; cursor: pointer;" (click)="MostrarFormularioLoginClick()">
     LOGIN
   </div>
 </div>
@@ -20,21 +20,24 @@
 
 <!-- Login -->
 
-<div class="row text-center;" style="margin-top: 20%; padding: 15px;">
-  <div class="col-2" style="background-color: white;">
-    <div class="row m-1">
+<div class="row  text-center" style="margin-top:12%;" *ngIf="MostrarFormularioLogin">
+  <div class="col">
+    <div class="row m-1" style="font-size:19px;">
       <div class="col">
+        <label style="font-weight: bold; font-size: 23px;">Usuário</label>
         <input type="text" placeholder="Usuário" />
       </div>
     </div>
-    <div class="row m-1">
+    <div class="row m-1" style="font-size:19px;">
       <div class="col">
-        <input type="text" placeholder="Senha" />
+        <label style="font-weight: bold; font-size: 23px; margin-right: 10px;">Senha</label>
+        <input type="password" placeholder="Senha" />
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="font-size:19px;">
+
       <div class="col">
-        <button style="background-color: blue; color: white; margin-left: 125px; margin-top: 8px;">Login</button>
+        <button style="background-color: blue; color: white; margin-top:8px;">Login</button>
       </div>
     </div>
   </div>

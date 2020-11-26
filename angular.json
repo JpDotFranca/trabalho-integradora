@@ -121,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "trabalho-integradora"
+    }
+  },
+  "defaultProject": "trabalho-integradora",
+  "cli": {
+    "analytics": "548eee51-0740-4f8d-9ff6-96145792f530"
+  }
 }
